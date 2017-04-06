@@ -11,7 +11,7 @@
 h1, .output-container div {
   font-size: 5rem;
   color: #cb75ce;
-  padding: 0px 15px 35px;
+  padding: 0px 15px;
   display: inline-block;
 }
 
@@ -20,23 +20,26 @@ h1 {
 }
 
 .output-container div {
-  clear: both;
-  float: left;
+  display: inline;
+  margin: 5px;
+  line-height: 116px;
+  padding-bottom: 13px;
+  box-decoration-break: clone;
 }
 
-div:nth-child(4n+1) {
+.output-container div:nth-child(4n+1) {
   background: #85d1f3;
 }
 
-div:nth-child(4n+2) {
+.output-container div:nth-child(4n+2) {
   background: #fd8d90;
 }
 
-div:nth-child(4n+3) {
+.output-container div:nth-child(4n+3) {
   background: #feeb35;
 }
 
-div:nth-child(4n+4) {
+.output-container div:nth-child(4n+4) {
   background: #b0b3e7;
 }
 
